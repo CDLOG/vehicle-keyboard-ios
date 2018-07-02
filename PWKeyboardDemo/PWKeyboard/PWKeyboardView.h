@@ -36,7 +36,7 @@ typedef void(^ButtonClickBlock)(PWKeyboardButtonType buttonType, NSString *text)
 @property (strong, nonatomic) ButtonClickBlock buttonClickBlock;
 @property (assign, nonatomic) PWKeyboardType type;
 @property (assign, nonatomic) PWKeyboardNumType numType;
-@property (assign, nonatomic, readonly) NSUInteger length;//车牌号限制长度
+@property (assign, nonatomic) NSUInteger length;//车牌号限制长度
 @property (copy, nonatomic) UIColor * selectedColor;//选中色
 
 @property (weak, nonatomic) id<PWKeyboardViewDelegate> delegate;
