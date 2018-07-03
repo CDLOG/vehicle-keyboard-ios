@@ -36,6 +36,7 @@
     __weak typeof (self)weakSelf = self;
     self.textField.inputView = [PWKeyboardView shareInstance];
     [PWKeyboardView shareInstance].delegate = self;
+    [PWKeyboardView shareInstance].length = 8;
     [PWKeyboardView shareInstance].selectedColor = [UIColor greenColor];
     [PWKeyboardView shareInstance].type = PWKeyBoardTypeCivilAndArmy;
     [PWKeyboardView shareInstance].buttonClickBlock = ^(PWKeyboardButtonType buttonType, NSString *text) {

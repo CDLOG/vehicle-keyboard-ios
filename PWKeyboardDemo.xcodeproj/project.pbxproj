@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033118C520EB2620008EDA77 /* UIColor+HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 033118C420EB2620008EDA77 /* UIColor+HexRGB.m */; };
 		685443B302DC5E6CA08783C6 /* libPods-PWKeyboardDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDF96E903B8E3594BEC2B28 /* libPods-PWKeyboardDemo.a */; };
 		954C18BE1FB94E0000152049 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 954C18BD1FB94E0000152049 /* AppDelegate.m */; };
 		954C18C11FB94E0000152049 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954C18C01FB94E0000152049 /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033118C320EB2620008EDA77 /* UIColor+HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRGB.h"; sourceTree = "<group>"; };
+		033118C420EB2620008EDA77 /* UIColor+HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRGB.m"; sourceTree = "<group>"; };
 		0A2BDB0A690E8AF21538926B /* Pods-PWKeyboardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWKeyboardDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWKeyboardDemo/Pods-PWKeyboardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1DDF96E903B8E3594BEC2B28 /* libPods-PWKeyboardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWKeyboardDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		954C18B91FB94E0000152049 /* PWKeyboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWKeyboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +122,8 @@
 		954C18D21FB94E5B00152049 /* PWKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				033118C320EB2620008EDA77 /* UIColor+HexRGB.h */,
+				033118C420EB2620008EDA77 /* UIColor+HexRGB.m */,
 				954C18D61FB94E5B00152049 /* PWEnumeration.h */,
 				954C18D71FB94E5B00152049 /* PWHandler.h */,
 				954C18D81FB94E5B00152049 /* PWHandler.m */,
@@ -253,6 +258,7 @@
 				954C18BE1FB94E0000152049 /* AppDelegate.m in Sources */,
 				954C18ED1FB9663100152049 /* TestCollectionViewCell.m in Sources */,
 				954C18E41FB94E5B00152049 /* PWCollectionViewCell.m in Sources */,
+				033118C520EB2620008EDA77 /* UIColor+HexRGB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "PWKeyboardView.h"
 #import "PWCollectionViewCell.h"
+#import "UIColor+HexRGB.h"
 
 #define PWKeyboardViewHorizontalMargin 4
 #define PWKeyboardViewHorizontalEdge 4
@@ -249,6 +250,7 @@
     
     self.divisionLine = [UIView new];
     self.divisionLine.backgroundColor = [UIColor colorWithRed:204.f/255.f green:204.f/255.f blue:204.f/255.f alpha:1];
+    
     self.divisionLine.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.divisionLine];
     
@@ -486,6 +488,7 @@
 - (UIColor *)selectedColor {
     if (!_selectedColor) {
         _selectedColor = [UIColor colorWithRed:29.f/255.f green:143.f/255.f blue:238.f/255.f alpha:1.f];
+        
     }
     return _selectedColor;
 }

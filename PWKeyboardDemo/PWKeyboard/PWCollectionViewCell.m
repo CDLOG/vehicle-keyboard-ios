@@ -8,7 +8,7 @@
 
 #import "PWCollectionViewCell.h"
 #import "PWEnumeration.h"
-
+#import "UIColor+HexRGB.h"
 @interface PWCollectionViewCell ()
 
 @property (strong, nonatomic) UIImageView * shadowImageView;
@@ -80,7 +80,7 @@
             self.label.hidden = NO;
             self.imageView.hidden = YES;
             self.shadowImageView.hidden = NO;
-            self.label.textColor = [UIColor blackColor];
+            self.label.textColor = [UIColor colorWithHex:@"545454"];
             self.contentView.backgroundColor = [UIColor clearColor];
             
             [self layerChangePosition:NO];
