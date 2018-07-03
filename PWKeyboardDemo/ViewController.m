@@ -12,7 +12,7 @@
 
 #import "PWHandler.h"
 
-@interface ViewController ()
+@interface ViewController ()<PWKeyboardViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -25,12 +25,17 @@
 
 @implementation ViewController
 
+-(void)modelAlreadyUpdate:(PWListModel *)listModel{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     __weak typeof (self)weakSelf = self;
     self.textField.inputView = [PWKeyboardView shareInstance];
+    [PWKeyboardView shareInstance].delegate = self;
     [PWKeyboardView shareInstance].selectedColor = [UIColor greenColor];
     [PWKeyboardView shareInstance].type = PWKeyBoardTypeCivilAndArmy;
     [PWKeyboardView shareInstance].buttonClickBlock = ^(PWKeyboardButtonType buttonType, NSString *text) {
@@ -62,6 +67,8 @@
     self.collectionView.clipsToBounds = NO;
 
 }
+
+
 
 - (IBAction)changeKeyboardType:(UIButton *)sender {
     static NSInteger i = 0;

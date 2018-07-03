@@ -29,6 +29,7 @@
 
 @implementation PWCollectionLayout
 
+
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSArray* attributes = [super layoutAttributesForElementsInRect:rect];
     if (!attributes.count) {
@@ -478,9 +479,9 @@
 }
 
 #pragma mark - set get
-- (NSUInteger)length {
-    return self.numType == PWKeyboardNumTypeNewEnergy ? 8 : 7;
-}
+//- (NSUInteger)length {
+//    return self.numType == PWKeyboardNumTypeNewEnergy ? 8 : 8;
+//}
 
 - (UIColor *)selectedColor {
     if (!_selectedColor) {
